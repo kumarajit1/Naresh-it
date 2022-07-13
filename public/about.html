@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About</title>
+      <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <div class="btn-primary btn-lg" style="text-align: center; width: 1100px; color: white;">Details<button class="btn-sm" style="float: right;"><span class="bi bi-funnel-fill" style="float: right;">Filter</span></button></div>
+            <div class="table1 border " style=" width: 1100px;padding: 30px; height: 300px; ">                
+                <div class="container-fluid">
+                    <table class="table table-bordered table-striped">
+                        <thead style="background-color: rgba(128, 128, 128, 0.5);">
+                             <tr><th>Id</th>
+                             <th>Course Name</th>
+                             <th>Faculty Name</th>
+                             <th>Duration</th>
+                             <th>Timings</th>
+                             <th>View</th>
+                        </tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Angular 8</td>
+                                <td>Sudhakar sharma sir</td>
+                                <td>45 days</td>
+                                <td>07:30 AM</td>
+                                <td><button data-bs-target="#angular" data-bs-toggle="modal" class="btn btn-warning"> View <span class="bi bi-eye-fill"></span> </button></td>
+                            </tr>
+                            <tr>
+                             <td>2</td>
+                             <td>Node Js</td>
+                             <td>Samba sir</td>
+                             <td>45 days</td>
+                             <td>9:00 AM</td>
+                             <td><button data-bs-target="#nodejs" data-bs-toggle="modal" class="btn btn-warning"> View <span class="bi bi-eye-fill"></span> </button></td>
+                         </tr>
+                         <tr>
+                             <td>2</td>
+                             <td>Java</td>
+                             <td>Hari krishna sir</td>
+                             <td>60 days</td>
+                             <td>4:30 PM</td>
+                             <td><button data-bs-target="#java" data-bs-toggle="modal" class="btn btn-warning"> View <span class="bi bi-eye-fill"></span> </button></td>
+                         </tr>
+                        </tbody>         
+                    </table>
+                </div>
+            </div>
+           <div class="modal" id="angular" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span><b>Details:</b></span>
+                        <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div><b>Course: </b> Angular 8</div>
+                        <div><b>Faculty: </b> Sudhakar sharma sir</div>
+                        <div><b>Durations: </b> 45 days</div>
+                        <div><b>Timings: </b>07:30 AM</div>
+                        <div><b>Description: </b> Angular 8 is a client-side TypeScript based framework which is used to create dynamic web applications. It is very similar to its previous versions except having some extensive features.</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-warning">Close</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="modal" id="nodejs">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span><b>Details:</b></span>
+                        <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div><b>Course:</b>Node Js</div>
+                        <div><b>Faculty:</b>Samba sir</div>
+                        <div><b>Durations:</b>45 days</div>
+                        <div><b>Timings:</b><span>9:00 AM</span></div>
+                        <div><b>Description:</b>Node.js connects the ease of a scripting language (JavaScript) with the power of Unix network programming. Node.js was built on the Google V8 JavaScript engine since it was open-sourced under the BSD license.</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-warning">Close</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+        <div class="modal" id="java">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span><b>Details:</b></span>
+                        <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div><b>Course:</b>Java</div>
+                        <div><b>Faculty:</b>Hari krishna sir</div>
+                        <div><b>Durations:</b>60 days</div>
+                        <div><b>Timings:</b><span>4:30 PM</span></div>
+                        <div><b>Description:</b>Java is an object-oriented programming language developed by Sun Microsystems, and it was released in 1995. ... Java Virtual Machine (JVM) executes Java code, but it has been written in platform-specific languages such as C/C++/ASM, etc.</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-warning">Close</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+
+        
+       
+
+      <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
